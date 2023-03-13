@@ -57,16 +57,18 @@
 
 </head>
 <body>
+ 
+<?php foreach($hotels as $hotel){
+    // var_dump($hotel);
+   echo $hotel_name= $hotel["name"]; 
+   echo $hotel_description= $hotel["description"];
+   echo $hotel_parking=$hotel["parking"];
+   echo $hotel_vote=$hotel["vote"];
+   echo $hotel_distance= $hotel["distance_to_center"];
+  }
 
-        <?php foreach($hotels as  $hotel_key => $hotel): ?>
-            <li><h3>HOTEL: <?= $hotel_key ?> </h3></li>
-   
-            <?php foreach($hotel as $all_hotel) : ?>
-              <li><?= $all_hotel ?></li>
-            <?php endforeach ?>
+?>
 
-            
-        <?php endforeach ?>
             
 
 </body>
